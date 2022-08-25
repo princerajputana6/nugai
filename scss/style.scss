@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import '_variables';
+@import '_operationsSection';
+@import '_leadershipCard';
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+}
+
+body {
+  margin: 0;
+  font-family: 'Monsterrat', sans-serif;
+  color: $dark-gray;
+  text-align: left;
+  background-color: $white;
+}
+
+section {
+  margin-top: 20px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 50vh;
+  .sectionTitle {
+    color: $secondary;
+    font-size: 1.625rem;
+    letter-spacing: 0.5px;
+    text-align: center;
+    font-weight: 700;
+    margin: 24px auto;
+  }
+}
+
+.footerSection {
+  background-color: #efefef;
+}

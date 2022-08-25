@@ -1,0 +1,19 @@
+.operationsSection {
+  background-color: $tertiary;
+  .nav {
+    padding-left: 40px;
+  }
+}
+
+#v-pills-tab .nav-link {
+  display: flex;
+  color: $black;
+  justify-content: flex-start;
+  padding: 20px 30px;
+}
+
+section .btnGetStarted,
+#v-pills-tab .active {
+  background-color: $primary;
+  color: $white;
+}

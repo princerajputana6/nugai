@@ -1,0 +1,80 @@
+@import '_variables';
+@import '_operationsSection';
+@import '_leadershipCard';
+@import '_heroSection';
+@import '_automationSection';
+@import '_benefitsSection';
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+p,
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: $secondary;
+}
+
+.text-dark {
+  color: $secondary;
+}
+
+.bg-primary {
+  background-color: $primary  !important;
+}
+
+.container {
+  max-width: 1255px;
+}
+
+.section-wrap {
+  padding: 4.6875rem 0;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  .sectionTitle {
+    color: $secondary;
+    font-size: 1.625rem;
+    letter-spacing: 0.5px;
+    text-align: center;
+    font-weight: 700;
+    margin: 20px 10px;
+  }
+}
+
+.nav-link {
+  font-size: 1.07rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: $spacer * 0.05;
+  color: $dark-gray;
+  margin-left: 40px;
+}
+
+.btn-primary {
+  padding: $spacer * 0.8 $spacer * 3.75;
+  font-size: $font-size-base * 1;
+  background-color: $primary;
+  color: $white;
+  text-transform: capitalize;
+  font-weight: $font-weight-bold;
+}
+
+.btn-primary:hover {
+  color: $white;
+  background-color: $primary-dark;
+}
+
+.footerSection {
+  background-color: #efefef;
+}

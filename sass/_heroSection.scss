@@ -1,0 +1,20 @@
+.heroSection {
+  p:nth-child(1) {
+    font-size: $font-size-base * 1.375;
+  }
+  p:nth-child(2) {
+    font-size: $font-size-base * 1.525;
+    letter-spacing: 0.3px;
+    font-weight: $font-weight-bold;
+    margin-top: 20px;
+  }
+  p:nth-child(3) {
+    font-weight: $font-weight-bold;
+    font-size: $font-size-base * 2.12;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    letter-spacing: $spacer * 0.05;
+    max-width: 480px;
+    justify-content: flex-start !important;
+  }
+}

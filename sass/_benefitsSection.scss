@@ -1,0 +1,17 @@
+.benefitsSection {
+  .sectionTitle {
+    margin-bottom: 50px;
+  }
+
+  .hr-line {
+    width: 100%;
+    color: $dark-gray;
+  }
+
+  .benefit-content {
+    h6 {
+      font-size: $font-size-base * 1.175;
+      margin-bottom: 2px;
+    }
+  }
+}

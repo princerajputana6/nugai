@@ -1,0 +1,218 @@
+//
+// Color system
+//
+
+$white: #ffffff;
+$black: #000000;
+$dark-purple-gray: #727382;
+$dark-gray: #5c5c6e;
+$light-purple-100: #f5f7fb;
+$purple: #8c7bd1;
+$yellow: #e9b137;
+$sky-blue: #4b9eed;
+$light-blue: #99d5fa;
+$blue-muted: #afbace;
+$border-color: #d7d7d7;
+$text-color: $dark-purple-gray;
+
+$primary: #1b75bb;
+$primary-dark: #195f96;
+$secondary: #404040;
+$tertiary: #ebebeb;
+
+$theme-colors: (
+  'white': $white,
+  primary: $primary,
+  yellow: $yellow,
+  sky-blue: $sky-blue,
+  light-blue: $light-blue,
+  blue-muted: $blue-muted,
+  //secondary: $secondary
+);
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+//font Family
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 300;
+  src: url(../fonts/Montserrat-Light.ttf);
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  src: url(../fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  src: url(../fonts/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 800;
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+$font-family-montserrat: 'Montserrat', sans-serif;
+$font-family-Montserrat: 'Montserrat', sans-serif;
+$font-family-base: $font-family-Montserrat;
+
+$font-weight-black: 900;
+$font-weight-extra-bold: 800;
+$font-weight-bold: 700;
+$font-weight-semi-bold: 600;
+$font-weight-medium: 500;
+$font-weight-regular: 400;
+$font-weight-light: 300;
+
+$font-size-base: 1rem;
+
+$h1-font-size: $font-size-base * 2.5;
+$h2-font-size: $font-size-base * 1.875;
+$h3-font-size: $font-size-base * 1.375;
+$h4-font-size: $font-size-base * 1.125;
+$h5-font-size: $font-size-base;
+$h6-font-size: $font-size-base * 0.75;
+
+$headings-margin-bottom: 0px;
+$headings-line-height: 1.3;
+
+$lead-font-weight: 400;
+$lead-line-height: 1.4;
+$lead-letter-spacing: 1px;
+$lead-lg-line-height: 1.83;
+$lead-lg-font-size: $font-size-base * 1.25;
+
+$line-height-base: 1.4;
+
+$line-height-xs: 1.2 !default;
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+$grid-breakpoints: (
+  xss: 0,
+  xs: 200px,
+  sm: 768px,
+  md: 991px,
+  lg: 1200px,
+  xl: 1320px,
+);
+
+$container-max-widths: (
+  xs: 576px,
+  sm: 740px,
+  md: 920px,
+  lg: 1170px,
+  xl: 1230px,
+);
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+// stylelint-disable
+$spacer: 1rem !default;
+$spacers: (
+  ) !default;
+$spacers: map-merge((0: 0,
+      1: ($spacer * 0.25,
+      ),
+      2: ($spacer * 0.5,
+      ),
+      3: ($spacer * 0.75,
+      ),
+      4: ($spacer,
+      ),
+      5: ($spacer * 1.25,
+      ),
+      6: ($spacer * 1.5,
+      ),
+      7: ($spacer * 2,
+      ),
+      8: ($spacer * 2.5,
+      ),
+    ),
+    $spacers
+);
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg: $white  !default;
+$body-color: $text-color;
+$body-letter-spacing: normal;
+
+// Navbar
+
+$navbar-light-color: $dark-gray  !default;
+$navbar-light-hover-color: rgba($primary, 0.9) !default;
+$navbar-light-active-color: $primary  !default;
+$navbar-light-disabled-color: rgba($black, 0.3) !default;
+$navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
+$navbar-light-toggler-border-color: rgba($black, 0.1) !default;
+
+// Button
+
+$btn-font-size-sm: $font-size-base * 0.75;
+$btn-line-height-sm: 1.9;
+$btn-padding-x-sm: $spacer * 1.75;
+
+$btn-font-size: $font-size-base * 0.875;
+$btn-line-height: 2;
+$btn-font-weight: $font-weight-bold  !default;
+$btn-padding-x: $spacer * 1.625;
+
+$btn-font-size-lg: $font-size-base;
+$btn-padding-y-lg: $spacer * 0.8;
+$btn-padding-x-lg: $spacer * 2;
+$btn-line-height: 2;
+
+$rounded-border-radius: 26px;
+
+// SHADOWS
+
+$shadow-appbar: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+$shadow-card: 0px 2.79389px 11.1756px rgba(141, 123, 209, 0.2);
+$shadow-card-elevated: 0 -6px 16px -6px rgba(0, 0, 0, 0.03),
+  0 8px 16px -8px rgba(0, 0, 0, 0.03), 0 13px 27px -5px rgba(50, 50, 93, 0.25);
+$shadow-form: 0 0 4px 0 rgba(0, 0, 0, 0.15);
+$shadow-fab: 0 6px 20px -5px rgba(50, 50, 93, 0.25);
+$shadow-fab-card: 0 6px 20px 0 rgba(50, 50, 93, 0.25);
+$shadow-fab-up: 0 -2px 20px -5px rgba(50, 50, 93, 0.25);
+$shadow-fab-elevated: 0 0 29px 0 rgba(0, 0, 0, 0.2);
+$shadow-sticky-header: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+
+//font-weight
+
+$btn-font-weight: $font-weight-bold;
+$btn-box-shadow: none;
+$btn-border-width: 1px;
+
+// Components
+// Define common padding and border radius sizes and more.
+
+$border-radius: 0.25rem;
+$border-radius-sm: 0.25rem;
+$border-radius-md: 0.375rem;
+$border-radius-lg: 0.5rem;
+$border-radius-xs: 0.2rem !default;
+
+//common responsive class

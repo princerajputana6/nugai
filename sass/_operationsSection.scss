@@ -1,0 +1,55 @@
+.operationsSection {
+  .sectionTitle {
+    margin-top: 0px;
+  }
+
+  #v-pills-tab {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+#v-pills-tab .nav-link {
+  display: flex !important;
+  text-align: left;
+  padding: 10px 10px 10px 55px;
+  border-radius: 10px 0px 0px 10px;
+
+  &.active {
+    background-color: $primary;
+    font-weight: $font-weight-bold;
+
+    .nav-link-anchor {
+      color: $white;
+      font-weight: $font-weight-bold;
+    }
+  }
+
+  .nav-link-anchor {
+    color: $black;
+    text-transform: capitalize;
+    max-width: 600px;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-weight: $font-weight-regular;
+
+    &.active {
+      color: $white;
+      font-weight: $font-weight-bold;
+    }
+  }
+}
+
+.tab-content {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.operationsSection {
+  background-color: $tertiary;
+
+  .nav {
+    padding-left: 40px;
+  }
+}
